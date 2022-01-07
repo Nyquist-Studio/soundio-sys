@@ -14,11 +14,11 @@ fn build_and_link_soundio() -> PathBuf {
         .define("BUILD_DYNAMIC_LIBS", "false")
         .define("BUILD_EXAMPLE_PROGRAMS", "false")
         .define("BUILD_TESTS", "false")
-        .define("ENABLE_JACK", "false")
-        .define("ENABLE_PULSEAUDIO", "false")
-        .define("ENABLE_ALSA", "false")
+        .define("ENABLE_JACK", "true")
+        .define("ENABLE_PULSEAUDIO", "true")
+        .define("ENABLE_ALSA", "true")
         .define("ENABLE_COREAUDIO", "true")
-        .define("ENABLE_WASAPI", "false")
+        .define("ENABLE_WASAPI", "true")
         .build();
 
     println!(
