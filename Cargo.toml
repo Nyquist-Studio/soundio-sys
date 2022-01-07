@@ -2,6 +2,8 @@
 name = "soundio-sys"
 version = "0.1.0"
 edition = "2021"
+description = "Unsafe Rust bindings for libsoundio"
+license = "MIT"
 
 [build-dependencies]
 bindgen = "0.59"
