@@ -45,7 +45,7 @@ fn generate_rust_binding(build_output: &Path) {
         .join("src")
         .join("bindings.rs");
 
-    bindings
-        .write_to_file(out_path)
-        .expect("Failed to write bindings");
+    if let Err(error) = bindings.write_to_file(out_path) {
+        println!("cargo:warning={}", error);
+    }
 }
