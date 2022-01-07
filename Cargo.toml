@@ -1,6 +1,6 @@
 [package]
 name = "soundio-sys"
-version = "0.1.2"
+version = "0.1.3"
 edition = "2021"
 description = "Unsafe Rust bindings for libsoundio"
 repository = "https://github.com/Nyquist-Studio/soundio-sys"
